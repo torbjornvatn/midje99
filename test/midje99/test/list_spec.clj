@@ -1,7 +1,7 @@
-(ns midje99.test.ListSpec
+(ns midje99.test.list-spec
   (:use clojure.test)
   (:use midje.sweet)
-  (:use midje99.ListsSolutions))
+  (:use midje99.lists-solutions))
 
 (future-fact "P01 - Find the last element of a list"
   (lastElem '(1, 1, 2, 3, 5, 8)) => 8)

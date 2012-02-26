@@ -1,4 +1,4 @@
-(ns midje99.ListsSolutions)
+(ns midje99.lists-solutions)
 
 (defn lastElem [list]
   ("todo"))
