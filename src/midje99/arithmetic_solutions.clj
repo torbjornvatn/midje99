@@ -1,16 +1,16 @@
 (ns midje99.arithmetic-solutions)
 
 (defn is-prime [x]
-  "todo")
+  ("todo"))
 
 (defn gcd [list]
-  "todo")
+  ("todo"))
 
 (defn is-coprime-to [x y]
-  "todo")
+  ("todo"))
 
 (defn totient [x]
-  "todo")
+  ("todo"))
 
 (defn primefactors [x]
-  "todo")
+  ("todo"))

@@ -1,4 +1,4 @@
-(ns midje99.lists-solutions)
+(ns )
 
 (defn lastElem [list]
   ("todo"))
@@ -20,3 +20,16 @@
 
 (defn flatten-list [list]
   ("todo"))
+
+(defn compress [list]
+  ("todo"))
+
+(defn pack [list]
+  ("todo"))
+
+(defn encode [list]
+  ("todo"))
+
+(defn encode-modified [list]
+  ("todo"))
+
