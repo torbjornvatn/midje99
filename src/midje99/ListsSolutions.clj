@@ -1,22 +1,22 @@
 (ns midje99.ListsSolutions)
 
 (defn lastElem [list]
-  "todo")
+  ("todo"))
 
 (defn penultimate [list]
-  "todo")
+  ("todo"))
 
 (defn nth-elem [arg list]
-  "todo")
+  ("todo"))
 
 (defn length [list]
-  "todo")
+  ("todo"))
 
 (defn reverse-list [list]
-  "todo")
+  ("todo"))
 
 (defn is-palindrome [list]
-  "todo")
+  ("todo"))
 
 (defn flatten-list [list]
-  "todo")
+  ("todo"))
