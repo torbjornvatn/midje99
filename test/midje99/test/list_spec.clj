@@ -1,5 +1,4 @@
 (ns midje99.test.list-spec
-  (:use clojure.test)
   (:use midje.sweet)
   (:use midje99.lists-solutions))
 
