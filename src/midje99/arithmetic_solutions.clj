@@ -14,3 +14,9 @@
 
 (defn primefactors [x]
   ("todo"))
+
+(defn prime-factor-multiplicity [x]
+  ("todo"))
+
+(defn prime-factor-multiplicity-map [x]
+  ("todo"))

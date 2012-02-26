@@ -23,23 +23,23 @@
 (future-fact "P07 - Flatten a nested list structure"
   (flatten-list '('(1 1) 2 '(3 '(5 8)))) => '(1 1 2 3 5 8))
 
-(future-fact "P08 - Eliminate consecutive duplicates of list elements. 
+(future-fact "P08 - Eliminate consecutive duplicates of list elements.
 If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed"
-  (compress '(:a :a :a :a :b :c :c :a :a :d :e :e :e :e)) => '(:a :b :c :a :d :e))
+  (compress '(a a a a b c c a a d e e e e)) => '(a b c a d e))
 
-(future-fact "P09 - Pack consecutive duplicates of list elements into sublists. 
+(future-fact "P09 - Pack consecutive duplicates of list elements into sublists.
 If a list contains repeated elements they should be placed in separate sublists"
-  (pack '(:a :a :a :a :b :c :c :a :a :d :e :e :e :e)) =>
-  '('(:a :a :a :a) '(:b) '(:c :c) '(:a :a) '(:d) '(:e :e :e :e)))
+  (pack '(a a a a b c c a a d e e e e)) =>
+  '('(a a a a) '(b) '(c c) '(a a) '(d) '(e e e e)))
 
 (future-fact "P10 - Run-length encoding of a list. Use the result of problem P09 to implement the so-called run-length encoding
 data compression method. Consecutive duplicates of elements are encoded as tuples (N E) where N is the number
 of duplicates of the element E"
-  (encode '(:a :a :a :a :b :c :c :a :a :d :e :e :e :e)) =>
-  '([4 :a] [1 :b] [2 :c] [2 :a] [1 :d] [4 :e]))
+  (encode '(a a a a b c c a a d e e e e)) =>
+  '([4 a] [1 b] [2 c] [2 a] [1 d] [4 e]))
 
 (future-fact "P11 - Modified run-length encoding. Modify the result of problem P10 in such a way that if an element has
-no duplicates it is simply copied into the result list. Only elements with duplicates are transferred  
+no duplicates it is simply copied into the result list. Only elements with duplicates are transferred
 as (N E) terms"
-  (encode-modified '(:a :a :a :a :b :c :c :a :a :d :e :e :e :e)) =>
-  '([4 :a] :b [2 :c] [2 :a] :d [4 :e]))
+  (encode-modified '(a a a a b c c a a d e e e e)) =>
+  '([4 a] b [2 c] [2 a] d [4 e]))

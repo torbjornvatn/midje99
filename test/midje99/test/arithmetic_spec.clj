@@ -19,9 +19,9 @@ the number of positive integers r (1 <= r <= m) that are coprime to m"
 
 (future-fact "P35 - Determine the prime factors of a given positive integer.
 Construct a flat list containing the prime factors in ascending order"
-  (primefactors 315) => '(3, 3, 5, 7))
+  (primefactors 315) => '(3 3 5 7))
 
 (future-fact "P36 - Determine the prime factors of a given positive integer (2).
 Construct a list containing the prime factors and their multiplicity. Alternately, use a Map for the result"
-  (prime-factor-multiplicity 315) => '('(3,2), '(5,1), '(7,1))
-  (prime-factor-multiplicity-map 315) => {3 2, 5 1, 7 1})
+  (prime-factor-multiplicity 315) => '('(3 2) '(5 1) '(7 1))
+  (prime-factor-multiplicity-map 315) => {:3 2 :5 1 :7 1})
